@@ -3,8 +3,8 @@ import { faMicrophone } from '@fortawesome/free-solid-svg-icons';
 import MultiName from './multi-name';
 
 export default function PageFinale() {
-  let cDate = new Date();
-  let cYear = cDate.getFullYear();
+  const cDate = new Date();
+  const cYear = cDate.getFullYear();
 	return (
         <div className="md:min-h-[--contentHeight] text-white md:flex md:flex-col md:justify-end max-md:backdrop-blur-[10px]">
           <div
