@@ -13,9 +13,9 @@ export default function CookiesConsent() {
 		<div className="flex justify-center items-center fixed top-[0] left-[0] right-[0] bottom-[0] z-[9999] bg-[rgba(255,255,255,0.5)] backdrop-blur-[8px]">
 			<div className="p-8 bg-white rounded-[2rem]">
 				<p className="mb-[1rem] script-font text-[3rem]">Quick Q-</p>
-				<p className="mb-[1rem]">Do you care if I run cookies for analytics and such?</p>
-				<p className="mb-[1rem]">I'm a big believer in personal privacy, it's all good if you say no.</p>
-				<p className="mb-[1rem]">But if you say no, you'll see this banner again. Up to you.</p>
+				<p className="mb-[1rem]">{ escape("Do you care if I run cookies for analytics and such?") }</p>
+				<p className="mb-[1rem]">{ escape("I'm a big believer in personal privacy, it's all good if you say no.") }</p>
+				<p className="mb-[1rem]">{ escape("But if you say no, you\'ll see this banner again. Up to you.") }</p>
 
 				{/*<h3 className="script-font text-[3rem] w-full text-right">It's up to you...</h3>*/}
 
