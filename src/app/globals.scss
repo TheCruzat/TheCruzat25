@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+
+  --scriptFont: "Yellowtail";
+
+  --gutter: 1rem;
+
+  --frameX: 0;
+  --frameY: 3.5rem;
+
+  --contentHeight: calc(100vh - (var(--frameY)*2));
+
+  --cSpace: 1.2rem;
+  --sSpace: 4.5rem;
+
+  --hSize: 2.25rem;
+
+  @media (min-width: 48rem) {
+    --frameX: 2rem;
+    --frameY: 5rem;
+
+    --hSize: 2.75rem;
+  }
+  @media (min-width: 64rem) {
+    --hSize: 3.2rem;
+  }
+}
+
+.script-font {
+  font-family: var(--scriptFont);
+}
+
+.page-content {
+
+  h2, p, ul, li {
+    margin-bottom: var(--cSpace);
+  }
+
+  p, li {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+
+  h2 {
+    font-family: var(--scriptFont);
+    font-weight: 400;
+    font-size: var(--hSize);
+    text-align: center;
+
+    &:before,
+    &:after {
+      display: inline-block;
+/*      content: "";*/
+      /*      content: " * * * * ";*/
+      font-size: 50%;
+      margin: 0 1rem;
+      width: 62px;
+      height: 18px;
+      background-size: contain;
+    }
+  }
+
+  .wp-block-group:not(.text-center) {
+    p {
+      text-align: justify;
+    }
+  }
+
+  .wp-block-group:not(:last-child) {
+    margin-bottom: var(--sSpace);
+  }
+
+  .wp-block-wutang-chicago-header {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: var(--cSpace);
+
+    h2 {
+      margin: 0 1.5rem;
+    }
+
+    svg {
+      width: 12px;
+    }
+
+    svg:not(:last-of-type) {
+      margin-right: 0.5rem;
+    }
+
+    @media (min-width: 48rem) {
+      h2 {
+        margin: 0 2rem;
+      }
+      svg {
+        width: 16px;
+
+        &:not(:last-of-type) {
+          margin-right: 1rem;
+        }
+      }
+    }
+
+    @media (min-width: 64rem) {
+      h2 {
+        margin: 0 2rem;
+      }
+      svg {
+        width: 20px;
+
+        &:not(:last-of-type) {
+          margin-right: 1.25rem;
+        }
+      }
+    }
+  }
+
+}
+
+footer[data-open="true"] > div {
+  bottom: 0;
+
+  button {
+    transform: rotate(0);
+  }
+}
+
+/*@media (prefers-color-scheme: dark) {   ß*/
+/*  :root {                               ß*/
+/*    --background: #0a0a0a;              ß*/
+/*    --foreground: #ededed;              ß*/
+/*  }                                     ß*/
+/*}                                       ß*/
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+}
+
