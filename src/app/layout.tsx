@@ -4,7 +4,7 @@ import { Roboto_Slab, Yellowtail } from "next/font/google";
 
 import { GoogleAnalytics } from '@next/third-parties/google';
 
-import CookiesConsent from './components/cookies-consent';
+// import CookiesConsent from './components/cookies-consent';
 
 import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css'; // Import the CSS
