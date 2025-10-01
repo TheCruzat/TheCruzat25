@@ -22,11 +22,13 @@ export default function Header({ border }: HeadProps) {
         mt-[var(--frameY)]
         border-4
         `+border}>
-        <Logo aria-hidden
+        <Image aria-hidden
+          src="the-cruzat-logo.svg"
           alt="The Cruzat"
           width="2266"
           height="546"
           className="h-auto max-w-[170px] sm:max-w-[220px] md:max-w-[260px] max-md:mt-[1.125rem] max-sm:mt-[0.125rem] md:mt-[0.725rem]" />
+
 
       </span>
     </header>

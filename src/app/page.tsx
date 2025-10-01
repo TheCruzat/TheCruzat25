@@ -16,10 +16,10 @@ const Home = async () => {
   const content = await getContent();
 
   if(!content) {
-    return <div>Not quite yet</div>
+    return <div>We are having difficulty</div>
   }
+
   return (
-    <>
       <div className="min-h-screen bg-[#E3E6F2]">
 
         <Header
@@ -54,7 +54,6 @@ const Home = async () => {
          />
 
       </div>
-    </>
   )
 }
 
