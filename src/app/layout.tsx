@@ -24,10 +24,11 @@ import "./globals.scss";
 const metaFings = {
   title: "The Cruzat : A Human Doing Things On Earth",
   description: "Dan Cruzat is an engineer of UI's and soundwaves, building and kvetching in Portland, OR.",
-  image: "/social.png",
+  image: "social.png",
 };
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://thecruzat.com"),
   title: metaFings['title'],
   description: metaFings['description'],
   openGraph: {

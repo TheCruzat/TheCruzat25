@@ -20,14 +20,16 @@ const themeSets = [
 	{ 	file: pth + 'bg-trees.webp', 		bg: 'bg-['+primaryColors[7]+']',	border: 'border-['+primaryColors[7]+']' }
 ];
 
-function randomPick(set) {
+function randomPick(set: Array<any>) {
   const rndx = Math.floor(Math.random() * set.length);
   return set[rndx];
 }
 
 export default function RandomTheme(i = null) {
 	if(i !== null) return themeSets[i];
-	else return randomPick(themeSets);
+	else {
+		return randomPick(themeSets);
+	}
 }
 
 /*
