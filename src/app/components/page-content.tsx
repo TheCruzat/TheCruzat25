@@ -1,6 +1,8 @@
+interface ConProps {
+	content: String;
+}
 
-
-export default function PageContent({ content }) {
+export default function PageContent({ content }: ConProps) {
 	return (
     <div className="bg-[rgba(255,255,255,0.9)] max-md:backdrop-blur-[10px]">
       <div

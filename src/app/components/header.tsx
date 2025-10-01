@@ -1,7 +1,11 @@
 import Image from "next/image";
 import Logo from './../assets/the-cruzat-logo.svg';
 
-export default function Header({ border }) {
+interface HeadProps {
+  border: String;
+}
+
+export default function Header({ border }: HeadProps) {
 	return (
     <header className="
       fixed z-[2] top-[0]

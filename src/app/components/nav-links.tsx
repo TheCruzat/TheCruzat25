@@ -1,7 +1,12 @@
 
+import {ReactNode} from "react";
 
-export default function NavLinks({ feed }) {
-	return (
+interface NLProps {
+  feed: ReactNode;
+}
+
+export default function NavLinks({ feed }: NLProps) {
+	if(!feed) {} else if(feed instanceof Array) return (
     <ul className="md:flex max-md:mb-[1rem]">
       { feed.map((link, ndx) => {
         return (

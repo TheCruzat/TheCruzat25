@@ -1,14 +1,18 @@
+import {ReactNode} from "react";
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons'
 
+interface SLProps {
+  feed: ReactNode;
+}
 library.add(fab);
 
-export default function SocialLinks({ feed }) {
-	return (
+export default function SocialLinks({ feed }: SLProps) {
+	if(!feed) {} else if(feed instanceof Array)  return (
     <ul className="flex">
       { feed.map((link, ndx) => {
-        console.log(link.icon);
         return (
           <li key={ndx}
             className="mr-[0.5rem] last:mr-[0]">

@@ -1,9 +1,15 @@
 'use client'
-import {useState} from "react";
+import {ReactNode, useState} from "react";
 import NavLinks from './nav-links';
 import SocialLinks from './social-links';
 
-export default function Footer({ nav, socials, bg }) {
+interface FootProps {
+  nav: ReactNode;
+  socials: ReactNode;
+  bg: String;
+}
+
+export default function Footer({ nav, socials, bg }: FootProps) {
 
   const railClass = `foot-rail
               md:max-w-[48rem]
