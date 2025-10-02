@@ -1,6 +1,6 @@
 
 import type { Metadata } from "next";
-import { Roboto_Slab, Yellowtail } from "next/font/google";
+import { Roboto_Slab, Yellowtail, Press_Start_2P } from "next/font/google";
 
 import { GoogleAnalytics } from '@next/third-parties/google';
 
@@ -11,6 +11,11 @@ import '@fortawesome/fontawesome-svg-core/styles.css'; // Import the CSS
 config.autoAddCss = false;
 
 const robotoSlab = Roboto_Slab({
+  subsets: ["latin"],
+});
+
+const pressStart = Press_Start_2P({
+  weight: ["400"],
   subsets: ["latin"],
 });
 
