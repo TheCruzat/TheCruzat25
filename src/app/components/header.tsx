@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Logo from './../assets/the-cruzat-logo.svg';
 
 interface HeadProps {
   border: String;

@@ -44,7 +44,9 @@ export default function Footer({ nav, socials, bg }: FootProps) {
   const ToggleMobileTrigger = () => {
     return (
       <div className="max-md:mb-[1rem] hidden max-md:block">
-        <button className="
+        <button
+          aria-label="Toggle mobile menu"
+          className="
           w-[3rem]
           h-[3rem]
           rotate-[180deg]
