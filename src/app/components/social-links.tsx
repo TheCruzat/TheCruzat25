@@ -1,13 +1,16 @@
+// module for social icon links
+
 import {ReactNode} from "react";
 
+// fontawesome imports + settings
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons'
+library.add(fab);
 
 interface SLProps {
   feed: ReactNode;
 }
-library.add(fab);
 
 export default function SocialLinks({ feed }: SLProps) {
 	if(!feed) {} else if(feed instanceof Array)  return (

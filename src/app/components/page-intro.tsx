@@ -1,4 +1,4 @@
-
+// module for Page Intro
 
 export default function PageIntro() {
 	return (

@@ -1,3 +1,4 @@
+// module for primary navigation
 
 import {ReactNode} from "react";
 

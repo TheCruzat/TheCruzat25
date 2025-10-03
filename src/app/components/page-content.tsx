@@ -1,3 +1,5 @@
+// module to hold main content
+
 interface ConProps {
 	content: String;
 }

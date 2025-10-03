@@ -1,3 +1,5 @@
+// module for random theme elements
+
 const pth = '/bg/';
 const primaryColors = [
 	"#5a6c4b",
@@ -10,14 +12,14 @@ const primaryColors = [
 	"#4a5b3f"
 ];
 const themeSets = [
-	{ 	file: pth + 'bg-dock.webp', 		bg: 'bg-['+primaryColors[0]+']',	border: 'border-['+primaryColors[0]+']' },
-	{ 	file: pth + 'bg-glimmer.webp', 		bg: 'bg-['+primaryColors[1]+']',	border: 'border-['+primaryColors[1]+']' },
-	{ 	file: pth + 'bg-lake.webp', 		bg: 'bg-['+primaryColors[2]+']',	border: 'border-['+primaryColors[2]+']' },
-	{ 	file: pth + 'bg-river.webp', 		bg: 'bg-['+primaryColors[3]+']',	border: 'border-['+primaryColors[3]+']' },
-	{ 	file: pth + 'bg-river2.webp', 		bg: 'bg-['+primaryColors[4]+']',	border: 'border-['+primaryColors[4]+']' },
-	{ 	file: pth + 'bg-tables.webp', 		bg: 'bg-['+primaryColors[5]+']',	border: 'border-['+primaryColors[5]+']' },
-	{ 	file: pth + 'bg-trail.webp', 		bg: 'bg-['+primaryColors[6]+']',	border: 'border-['+primaryColors[6]+']' },
-	{ 	file: pth + 'bg-trees.webp', 		bg: 'bg-['+primaryColors[7]+']',	border: 'border-['+primaryColors[7]+']' }
+	{ 	file: pth + 'bg-dock.webp',     	bg: 'bg-['+primaryColors[0]+']',	border: 'border-['+primaryColors[0]+']' },
+	{ 	file: pth + 'bg-glimmer.webp',  	bg: 'bg-['+primaryColors[1]+']',	border: 'border-['+primaryColors[1]+']' },
+	{ 	file: pth + 'bg-lake.webp',     	bg: 'bg-['+primaryColors[2]+']',	border: 'border-['+primaryColors[2]+']' },
+	{ 	file: pth + 'bg-river.webp',    	bg: 'bg-['+primaryColors[3]+']',	border: 'border-['+primaryColors[3]+']' },
+	{ 	file: pth + 'bg-river2.webp',   	bg: 'bg-['+primaryColors[4]+']',	border: 'border-['+primaryColors[4]+']' },
+	{ 	file: pth + 'bg-tables.webp',   	bg: 'bg-['+primaryColors[5]+']',	border: 'border-['+primaryColors[5]+']' },
+	{ 	file: pth + 'bg-trail.webp',    	bg: 'bg-['+primaryColors[6]+']',	border: 'border-['+primaryColors[6]+']' },
+	{ 	file: pth + 'bg-trees.webp',    	bg: 'bg-['+primaryColors[7]+']',	border: 'border-['+primaryColors[7]+']' }
 ];
 
 function randomPick(set: Array<any>) {

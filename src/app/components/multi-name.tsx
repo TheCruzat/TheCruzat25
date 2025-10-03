@@ -1,3 +1,8 @@
+// module for random name in footer
+
+// at some point, make this list a shared
+// global for all sites in the ecosystem
+
 const aliases = [
   'Julio English',
   'Pirks the Pilot',
