@@ -8,7 +8,7 @@ I had several goals I wanted to bullseye on this build:
 - Leverage [TailwindCSS](https://tailwindcss.com) for layout development
 - Evolve [the greatest 404 page](https://thecruzat.com/404) in the history of the known internet.
 
-The build is for demonstrational purposes only, if you choose to setup and run it, you will need to set up your .env file in the project root directory. If you're wiley, you can figure out where my feed is coming from, but any WordPress page via JSON API should render out in the frame.
+The build is for demonstration purposes only, if you choose to setup and run it, you will need to set up your .env file in the project root directory. If you're wiley, you can figure out where my feed is coming from, but any WordPress page via JSON API should render out in the frame.
 
 ## Setup
 
