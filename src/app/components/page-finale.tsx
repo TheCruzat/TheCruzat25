@@ -1,5 +1,6 @@
 // module for Page Finale
 
+import Image from "next/image";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMicrophone } from '@fortawesome/free-solid-svg-icons';
 import MultiName from './multi-name';
