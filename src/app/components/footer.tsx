@@ -22,7 +22,7 @@ export default function Footer({ nav, socials, bg }: FootProps) {
     md:rounded-[1.5rem]
     md:mb-[var(--frameY)]
     max-md:absolute
-    max-md:bottom-[-192px]
+    max-md:bottom-[-242px]
     max-md:left-24
     max-md:right-24
     max-sm:left-12
