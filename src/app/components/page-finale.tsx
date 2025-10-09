@@ -7,8 +7,19 @@ import MultiName from './multi-name';
 export default function PageFinale() {
   const cDate = new Date();
   const cYear = cDate.getFullYear();
-	return (
-        <div className="md:min-h-[--contentHeight] text-white md:flex md:flex-col md:justify-end max-md:backdrop-blur-[10px]">
+
+  return (
+        <div className="min-h-[--contentHeight] text-white flex flex-col md:justify-end max-md:justify-center max-md:backdrop-blur-[10px] max-md:pt-[3rem]">
+
+          <Image
+            src='chicago-in-cascadia.png'
+            width={90}
+            height={90}
+            alt="A Chicagoan In Cascadia"
+            className="rounded-[12px] mx-auto"
+             />
+
+
           <div
             className="
               page-content
@@ -21,13 +32,13 @@ export default function PageFinale() {
               leading-[0.8]
               max-md:px-[--gutter]
               md:px-[--frameX]
-              md:py-[calc(var(--frameY)*0.5)]
+              md:py-[calc(var(--frameY)*0.25)]
               max-md:py-[calc(var(--gutter)*2)]
               md:max-w-[48rem]
               md:mx-auto
               script-font
               ">
-            aut viam<br />inveniam aut<br />faciam
+            aut viam inveniam<br />aut faciam
           </div>
           <div
             className="
