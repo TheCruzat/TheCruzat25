@@ -14,8 +14,8 @@ export default function Header({ border }: HeadProps) {
     ">
       <span className={`
         bg-white
-        p-[0.75rem_1.25rem]
-        sm:p-[0_3rem_0.5rem]
+        p-[0.25rem_0.75rem]
+        sm:p-[0_2rem_0.5rem]
         rounded-[12rem]
         block
         mt-[var(--frameY)]
@@ -27,10 +27,11 @@ export default function Header({ border }: HeadProps) {
           width="2266"
           height="546"
           className="h-auto
-            max-w-[170px]
+            max-w-[220px]
             sm:max-w-[220px]
             md:max-w-[260px]
-            max-md:mt-[1.125rem]
+            xl:max-w-[290px]
+            max-md:mt-[0.625rem]
             max-sm:mt-[0.125rem]
             md:mt-[0.725rem]
           " />

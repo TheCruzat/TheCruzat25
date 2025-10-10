@@ -14,10 +14,10 @@ export default function PageFinale() {
 
           <Image
             src='assets/chicago-in-cascadia.png'
-            width={90}
-            height={90}
+            width={50}
+            height={50}
             alt="A Chicagoan In Cascadia"
-            className="rounded-[12px] mx-auto"
+            className="rounded-[8px] mx-auto"
              />
 
 

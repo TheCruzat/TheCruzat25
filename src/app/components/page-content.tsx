@@ -13,8 +13,7 @@ export default function PageContent({ content }: ConProps) {
 
           max-md:px-[--gutter]
           md:px-[--frameX]
-          md:pt-[calc(var(--frameY)*2)]
-          md:pb-[--frameY]
+          md:py-[--frameY]
           max-md:py-[calc(var(--frameY)*1)]
           md:max-w-[48rem]
           md:mx-auto
