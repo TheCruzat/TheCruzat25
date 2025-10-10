@@ -68,7 +68,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${robotoSlab.className} antialiased`}
+        className={`${robotoSlab.className} antialiased overflow-hidden`}
       >
         <GoogleAnalytics gaId="G-0DR12ND02R" />
         {children}
