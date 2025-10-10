@@ -1,6 +1,6 @@
 // module for random theme elements
 
-const pth = '/bg/';
+const pth = './../assets/bg/';
 const primaryColors = [
 	"#5a6c4b",
 	"#614626",

@@ -13,7 +13,7 @@ export default function PageFinale() {
         <div className="min-h-[--contentHeight] text-white flex flex-col md:justify-end max-md:justify-center max-md:backdrop-blur-[10px] max-md:pt-[3rem]">
 
           <Image
-            src='chicago-in-cascadia.png'
+            src='assets/chicago-in-cascadia.png'
             width={90}
             height={90}
             alt="A Chicagoan In Cascadia"

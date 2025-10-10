@@ -22,7 +22,7 @@ export default function Header({ border }: HeadProps) {
         border-4
         `+border}>
         <Image aria-hidden
-          src="the-cruzat-logo.svg"
+          src="assets/the-cruzat-logo.svg"
           alt="The Cruzat"
           width="2266"
           height="546"
