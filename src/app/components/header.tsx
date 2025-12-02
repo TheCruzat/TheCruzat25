@@ -1,10 +1,10 @@
 import Image from "next/image";
 
 interface HeadProps {
-  border: String;
+  borderColor?: string;
 }
 
-export default function Header({ border }: HeadProps) {
+export default function Header({ borderColor }: HeadProps) {
 	return (
     <header className="
       fixed z-[2] top-[0]
@@ -20,7 +20,8 @@ export default function Header({ border }: HeadProps) {
         block
         mt-[var(--frameY)]
         border-4
-        `+border}>
+        `}
+        style={{ borderColor: borderColor }}>
         <Image aria-hidden
           src="assets/the-cruzat-logo.svg"
           alt="The Cruzat"

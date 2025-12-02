@@ -1,7 +1,7 @@
-// module for random name in footer
+// components/RandomName.tsx
+'use client';
 
-// at some point, make this list a shared
-// global for all sites in the ecosystem
+import { useEffect, useState } from 'react';
 
 const aliases = [
   'Julio English',
@@ -55,13 +55,16 @@ const aliases = [
 ];
 
 function randoName() {
-  // Get a random index
   const randomIndex = Math.floor(Math.random() * aliases.length);
-
-  // Get the item at the random index
   return aliases[randomIndex];
 }
 
-export default function MultiName() {
-	return randoName();
+export default function RandomName() {
+  const [name, setName] = useState<string | null>(null);
+
+  useEffect(() => {
+    setName(randoName());
+  }, []);
+
+  return <>{name}</>;
 }

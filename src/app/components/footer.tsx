@@ -6,10 +6,10 @@ import SocialLinks from './social-links';
 interface FootProps {
   nav: ReactNode;
   socials: ReactNode;
-  bg: String;
+  bgColor?: string;
 }
 
-export default function Footer({ nav, socials, bg }: FootProps) {
+export default function Footer({ nav, socials, bgColor }: FootProps) {
 
   // rail styling includes dynamic bg value
   const railClass = `foot-rail
@@ -17,7 +17,6 @@ export default function Footer({ nav, socials, bg }: FootProps) {
     md:mx-auto md:w-full
     flex items-center md:justify-between
     md:px-[--frameX]
-    `+bg+`
     md:my-12rem
     md:rounded-[1.5rem]
     md:mb-[var(--frameY)]
@@ -79,7 +78,7 @@ export default function Footer({ nav, socials, bg }: FootProps) {
       md:max-w-[36rem]
       md:mx-auto md:w-full
     " data-open={mobileOpen}>
-      <div className={railClass}>
+      <div className={railClass} style={{ backgroundColor: bgColor }}>
 
         <ToggleMobileTrigger />
         <NavLinks feed={nav} />

@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMicrophone } from '@fortawesome/free-solid-svg-icons';
-import MultiName from './multi-name';
+import RandomName from './multi-name';
 
 export default function PageFinale() {
   const cDate = new Date();
@@ -57,7 +57,7 @@ export default function PageFinale() {
             // dangerouslySetInnerHTML={{ __html: footText }}
             >
               All Content &copy;2012-{cYear}<br />
-              Dan Cruzat aka <MultiName /><br />
+              Dan Cruzat aka <RandomName /><br />
               All Rights Reserved<br />
               <FontAwesomeIcon icon={faMicrophone} />DBAD<FontAwesomeIcon icon={faMicrophone} />
           </div>
