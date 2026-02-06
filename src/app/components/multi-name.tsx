@@ -47,7 +47,7 @@ const aliases = [
   'Brother to Reverend Nathaniel',
   'The Crown Prince of FA Nonsense',
   'The Firemaster',
-  'THe Breakfast Burrito Master',
+  'The Breakfast Burrito Master',
   'Lucky Conejo',
   'Moe\'s Favorite',
   'Sudi\'s Masterpiece',
